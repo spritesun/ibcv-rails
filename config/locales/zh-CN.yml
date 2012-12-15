@@ -1,10 +1,28 @@
 zh-CN:
+  attributes:
+    created_at: 创建时间
+    id: 编号
+    
+  activerecord:
+      models:
+        post: 记录
+      attributes:
+        post:
+          name: 标题
+          type: 类型
+          publish_date: 发布时间
+          content: 内容
+          location: 地点
+          
   helpers:
+    titles:
+      new: 新建
     links:
       new: 新建
       edit: 修改
       destroy: 删除
       cancel: 取消
+      back: 返回
       confirm: 您确定吗?
     actions: 操作
         
@@ -18,3 +36,11 @@ zh-CN:
       activities: 法会活动
       courses: 社教课程
       news: 活动新闻
+  
+  posts:
+    new:
+      title: 新建记录
+    edit:
+      title: 修改记录
+    index:
+      title: 记录列表
