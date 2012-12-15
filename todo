@@ -1,5 +1,6 @@
-- integrate bootstrap
 - create model for activity, course, news
+- ical,google calendar embed
+- google map integration
 - build up the photo gallery
 - build up the video gallery
 - build up header navigation
