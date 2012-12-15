@@ -11,3 +11,6 @@
  *= require_self
  *= require_tree .
  */
+
+/*Fix bootstrap navbar-fixed-top overlap issue*/
+ body { padding-top: 40px; }
