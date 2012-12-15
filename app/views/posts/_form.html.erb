@@ -1,14 +1,13 @@
 <%= simple_form_for @post.becomes(Post), :html => { :class => 'form-horizontal' } do |f| %>
   <% f.object = @post.becomes(@post.class)%>
   <%=f.input :name %>
-  <%=f.input :type %>
-  <%=f.input :location %>
+  <%=f.input :type, :collection => [:Event, :Course, :News], :as => :radio_buttons %>
+  <%=f.input :location, :input_html => {'data-provide' => 'typeahead', 'data-source' => '["墨尔本佛光山 Yarraville", "佛光山美术馆", "佛光缘尔有寺"]', 'data-minLength' => 0}%>
+  <%=f.input :content, :input_html => { :class => "span6" } %>
   <%=f.input :publish_date %>
-  <%=f.input :content %>
-
 
   <div class="form-actions">
     <%= f.button :submit, :class => 'btn-primary' %>
-    <%= link_to t('.cancel', :default => t("helpers.links.cancel")), posts_path, :class => 'btn' %>
+    <%= link_to t("helpers.links.cancel"), posts_path, :class => 'btn' %>
   </div>
 <% end %>

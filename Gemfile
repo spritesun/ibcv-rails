@@ -12,7 +12,7 @@ group :assets do
   gem 'libv8', '~> 3.11.8'
   gem 'therubyracer'
   gem 'less-rails'
-  gem 'twitter-bootstrap-rails'
+  gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 end
 
 gem 'jquery-rails'

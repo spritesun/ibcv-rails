@@ -1,0 +1,11 @@
+zh-CN:
+  simple_form:
+    required:
+      text: '必填'
+      mark: '*'
+    options:
+      post:
+        type:
+          Event: 法会活动
+          Course: 社教课程
+          News: 活动新闻
