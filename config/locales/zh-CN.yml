@@ -1,4 +1,13 @@
 zh-CN:
+  helpers:
+    links:
+      new: 新建
+      edit: 修改
+      destroy: 删除
+      cancel: 取消
+      confirm: 您确定吗?
+    actions: 操作
+        
   default_title: 墨尔本佛光山
   
   home:
